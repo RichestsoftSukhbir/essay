@@ -92,6 +92,7 @@ $(function () {
         });
     });
 
+    // generating page 
     let options = '';
     let pages;
     pages = 0;
@@ -102,13 +103,6 @@ $(function () {
         } else {
             options += "<li>" + i + " Pages / " + pages + " words" + "</li>";
         }
-    }
-
-    let k;
-    k = 0;
-    for (let i = 1; i <= 10; i++) {
-        k = k + 275;
-        console.log(i, k);
     }
     $('.loop-options').html(options);
 });

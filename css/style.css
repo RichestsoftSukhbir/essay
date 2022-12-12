@@ -537,11 +537,14 @@ input[type="radio"]:checked::before {
 /* writter slider */
 .writer-slide {
     opacity: 0.5;
+    filter: blur(3px);
     transition: all 0.5s ease;
 }
 
 .writer-slide.swiper-slide-active {
     opacity: 1;
+    filter: blur(0);
+
 }
 
 .testimonial-pagination,
