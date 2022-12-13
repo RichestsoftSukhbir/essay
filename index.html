@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+    <!-- Country Flags CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+
     <!-- Fontawesome Link -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
 
@@ -27,10 +30,343 @@
 
 <body>
     <section class="form-popup">
-        <div class="container spacer-y">
-            <form action="" method="post">
-                
+        <div class="container">
+            <form action="" method="post" class="step-form active">
+                <div class="form-heading">
+                    <div class="row gx-3 align-items-center">
+                        <div class="col-lg-6 col-9">
+                            <h3 class="text_neutral--700 mb-0">Place a new order</h3>
+                        </div>
+                        <div class="col-lg-6 col-3">
+                            <div class="popup-close text-end">
+                                <i class="fa-regular fa-times h4 m-0"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-form-wrapper">
+                    <div class="step-heading-wrapper">
+                        <div class="step-heading active">
+                            <div class="step-count">1</div>
+                            <div class="step-details">
+                                <h4 class="mb-2">Order Requirements</h4>
+                                <p class="p-default">Fill in your order requirements.</p>
+                            </div>
+                        </div>
+                        <div class="step-heading">
+                            <div class="step-count">2</div>
+                            <div class="step-details">
+                                <h4 class="mb-2">Order Details</h4>
+                                <p class="p-default">Add your order details.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-y">
+                        <div class="step step-1 form-active">
+                            <div class="row g-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment type:
+                                    </label>
+                                    <div class="theme-select mb-md-3">
+                                        <label for="" class="select-label">Select Assignment type *</label>
+                                        <ul class="select-options">
+                                            <li>Item 1</li>
+                                            <li>Item 2</li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                            <li>Item 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment language:
+                                    </label>
+                                    <div class="theme-select mb-3">
+                                        <label for="" class="select-label"><i class="fi fi-gb"></i> English</label>
+                                        <ul class="select-options">
+                                            <li><i class="fi fi-gb"></i> English</li>
+                                            <li><i class="fi fi-in"></i> Hindi</li>
+                                            <li><i class="fi fi-fr"></i> French</li>
+                                            <li><i class="fi fi-it"></i> Italian</li>
+                                            <li><i class="fi fi-jp"></i> Japanese</li>
+                                            <li><i class="fi fi-cn"></i> Chinese</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment details:
+                                    </label>
+                                    <div class="theme-select mb-3">
+                                        <label for="" class="select-label">Services *</label>
+                                        <ul class="select-options">
+                                            <li>Item 1</li>
+                                            <li>Item 2</li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                            <li>Item 5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="theme-select mb-md-3">
+                                        <label for="" class="select-label">Education Level *</label>
+                                        <ul class="select-options">
+                                            <li>Item 1</li>
+                                            <li>Item 2</li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                            <li>Item 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Deadline:
+                                    </label>
+                                    <div class="theme-select mb-3">
+                                        <label for="" class="select-label">Your Deadline *</label>
+                                        <ul class="select-options">
+                                            <li>Item 1</li>
+                                            <li>Item 2</li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                            <li>Item 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment size:
+                                    </label>
+                                    <div class="row g-3">
+                                        <div class="col-md-4 col-sm-4">
+                                            <label for=""
+                                                class="form-label text_neutral--600 p-small mb-1">Pages</label>
+                                            <div class="theme-select">
+                                                <label for="" class="select-label">1</label>
+                                                <ul class="select-options">
+                                                    <li>1</li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                    <li>4</li>
+                                                    <li>5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <label for=""
+                                                class="form-label text_neutral--600 p-small mb-1">Words</label>
+                                            <div class="theme-select">
+                                                <label for="" class="select-label">200</label>
+                                                <ul class="select-options">
+                                                    <li>200</li>
+                                                    <li>300</li>
+                                                    <li>400</li>
+                                                    <li>400</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <label for="" class="form-label text_neutral--600 p-small mb-1">Line Spacing:</label>
+                                            <div class="theme-select">
+                                                <label for="" class="select-label">Double</label>
+                                                <ul class="select-options">
+                                                    <li>Single</li>
+                                                    <li>Double</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 bottom-row justify-content-lg-between align-items-end mt-3">
+                                <div class="col-lg-5">
+                                    <div class="hero-form-estimate">
+                                        <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-end">
+                                        <a href="javascript:void(0)" class="primary-button next-button">Next Step <i class="fa-regular fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step-2">
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <label for="assignment_topic" class="form-label fw-500">* Assignment Topic:</label>
+                                    <input type="text" name="assignment_topic" class="form-control form-input mb-3" id="assignment_topic" placeholder="Type your topic here">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Sources & Citation Style:
+                                    </label>
+                                    <div class="theme-select mb-3">
+                                        <label for="" class="select-label">Any</label>
+                                        <ul class="select-options">
+                                            <li>Item 1</li>
+                                            <li>Item 2</li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                            <li>Item 5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="theme-select mb-md-3">
+                                        <label for="" class="select-label">Select Style</label>
+                                        <ul class="select-options">
+                                            <li>Item 1</li>
+                                            <li>Item 2</li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                            <li>Item 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Subject
+                                    </label>
+                                    <div class="theme-select mb-3">
+                                        <label for="" class="select-label">Select Subject</label>
+                                        <ul class="select-options">
+                                            <li>Item 1</li>
+                                            <li>Item 2</li>
+                                            <li>Item 3</li>
+                                            <li>Item 4</li>
+                                            <li>Item 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <label for="instructions" class="form-label fw-500">
+                                        * Instructions:
+                                    </label>
+                                    <textarea name="instructions" id="instructions" rows="3" class="form-control form-input" placeholder="Type your Instructions here"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-divider"></div>
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <label for="upload-file" class="form-label fw-500">
+                                        Upload Files
+                                    </label>
+                                    <label for="upload-file" class="upload-file-trigger">
+                                        <div class="upload-wrapper">
+                                            <img src="./images/file-upload.svg" alt="">
+                                            <p class="p-supersmall my-3">
+                                                Click or drag and drop multiple files here. Files containing personal information or any other banned files are prohibited.
+                                            </p>
+                                        </div>
+                                        <p class="file-name text-center"></p>
+                                        <input type="file" name="upload-file" class="upload-file" id="upload-file">
+                                        <div class="text-center mt-3">
+                                            <button type="button" class="primary-button upload-button border-0">
+                                                Browse Files
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row g-3 bottom-row justify-content-lg-between align-items-end mt-3">
+                                <div class="col-lg-5">
+                                    <div class="hero-form-estimate">
+                                        <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-end">
+                                        <a href="javascript:void(0)" class="text_neutral--500 fw-bold me-3 previous-button"><i class="fa-regular fa-arrow-left"></i> Previous Step</a>
+                                        <a href="javascript:void(0)" class="primary-button next-popup-button">Next Step <i class="fa-regular fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row g-3 bottom-row justify-content-lg-between align-items-end mt-3">
+                            <div class="col-lg-5">
+                                <div class="hero-form-estimate">
+                                    <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="text-end">
+                                    <a href="#" class="text_neutral--500 fw-bold me-3"><i class="fa-regular fa-arrow-left"></i> Previous Step</a>
+                                    <a href="#" class="primary-button">Next Step <i class="fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
             </form>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="confirm-form">
+                        <div class="form-heading">
+                            <div class="row gx-3 align-items-center">
+                                <div class="col-lg-6 col-9">
+                                    <h3 class="text_neutral--700 mb-0">Confirm order details</h3>
+                                </div>
+                                <div class="col-lg-6 col-3">
+                                    <div class="popup-close text-end">
+                                        <i class="fa-regular fa-times h4 m-0"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm-details">
+                            <div class="row align-items-center mb-2">
+                                <div class="col-6">
+                                    <p class="p-supersmall text_neutral--500">Assignment Topic</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text_neutral--500 text-end edit-button"><i class="fa-light fa-pen-to-square"></i></p>
+                                </div>
+                            </div>
+                            <div class="details-wrapper">
+                                <h6 class="m-0">Accounts</h6>
+                                <div class="details-blk">
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Assignment Type: <span class="p-default text_neutral--800 fw-500">Accounts</span></p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Pages/Words: <span class="p-default text_neutral--800 fw-500">1 pages / 275 words (Double spacing)</span></p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Service: <span class="p-default text_neutral--800 fw-500">Proofreading</span></p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Education Level: <span class="p-default text_neutral--800 fw-500">College</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="detail-row p-supersmall text_neutral--500">Your Deadline: <span class="p-default text_neutral--800 fw-500">Dec 22, 02:49 PM</span><span>(In 15 Days)</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hero-form-estimate">
+                                            <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-12 text-center">
+                                        <a href="javascript:void(0)" class="primary-button confirm-button">Confirm & Place Order <i class="fa-regular fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -99,7 +435,7 @@
                             With our top-notch essay writing service, you won't have to worry about anything related to
                             education.
                         </p>
-                        <a href="javascript:void(0)" class="primary-button">Write My Paper</a>
+                        <a href="javascript:void(0)" class="primary-button hero-button">Write My Paper</a>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <form action="" method="post" class="hero-form">
@@ -157,7 +493,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="select-incr-decr mb-3">
-                                        <div class="incr-decr select-decrement"><i class="fa-regular fa-minus"></i></div>
+                                        <div class="incr-decr select-decrement"><i class="fa-regular fa-minus"></i>
+                                        </div>
                                         <div class="theme-select">
                                             <label for="" class="select-label">3 pages / 835 words</label>
                                             <ul class="select-options loop-options">
@@ -178,10 +515,11 @@
                                 </label>
                             </div>
                             <div class="hero-form-estimate mb-3">
-                                <p class="p-small text-center text_neutral--100">Estimated price: ￥100🔥</p>
+                                <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img
+                                        src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
                             </div>
                             <div class="">
-                                <input type="submit" class="primary-button w-100 border-0" value="Write My Paper">
+                                <button type="button" class="primary-button w-100 border-0 hero-form-button">Write My Paper</button>
                             </div>
                         </form>
                     </div>
@@ -229,7 +567,8 @@
                                             <h6 class="text_neutral--700 m-0">4.5 (200 Reviews)</h6>
                                         </div>
                                         <div class="writer-qual mb-3">
-                                            <h5 class="fw-light m-0 text-end">Degree: <span class="fw-bold">Master’s</span></h5>
+                                            <h5 class="fw-light m-0 text-end">Degree: <span
+                                                    class="fw-bold">Master’s</span></h5>
                                             <h5 class="fw-light m-0">Total Orders: <span
                                                     class="fw-bold">500</span></span></h5>
                                         </div>
@@ -282,7 +621,8 @@
                                             <h6 class="text_neutral--700 m-0">4.5 (200 Reviews)</h6>
                                         </div>
                                         <div class="writer-qual mb-3">
-                                            <h5 class="fw-light m-0 text-end">Degree: <span class="fw-bold">Master’s</span></h5>
+                                            <h5 class="fw-light m-0 text-end">Degree: <span
+                                                    class="fw-bold">Master’s</span></h5>
                                             <h5 class="fw-light m-0">Total Orders: <span
                                                     class="fw-bold">500</span></span></h5>
                                         </div>
@@ -335,7 +675,8 @@
                                             <h6 class="text_neutral--700 m-0">4.5 (200 Reviews)</h6>
                                         </div>
                                         <div class="writer-qual mb-3">
-                                            <h5 class="fw-light m-0 text-end">Degree: <span class="fw-bold">Master’s</span></h5>
+                                            <h5 class="fw-light m-0 text-end">Degree: <span
+                                                    class="fw-bold">Master’s</span></h5>
                                             <h5 class="fw-light m-0">Total Orders: <span
                                                     class="fw-bold">500</span></span></h5>
                                         </div>
@@ -388,7 +729,8 @@
                                             <h6 class="text_neutral--700 m-0">4.5 (200 Reviews)</h6>
                                         </div>
                                         <div class="writer-qual mb-3">
-                                            <h5 class="fw-light m-0 text-end">Degree: <span class="fw-bold">Master’s</span></h5>
+                                            <h5 class="fw-light m-0 text-end">Degree: <span
+                                                    class="fw-bold">Master’s</span></h5>
                                             <h5 class="fw-light m-0">Total Orders: <span
                                                     class="fw-bold">500</span></span></h5>
                                         </div>
@@ -441,7 +783,8 @@
                                             <h6 class="text_neutral--700 m-0">4.5 (200 Reviews)</h6>
                                         </div>
                                         <div class="writer-qual mb-3">
-                                            <h5 class="fw-light m-0 text-end">Degree: <span class="fw-bold">Master’s</span></h5>
+                                            <h5 class="fw-light m-0 text-end">Degree: <span
+                                                    class="fw-bold">Master’s</span></h5>
                                             <h5 class="fw-light m-0">Total Orders: <span
                                                     class="fw-bold">500</span></span></h5>
                                         </div>
@@ -1009,7 +1352,8 @@
                             <div class="newsletter-form">
                                 <div class="icon-input">
                                     <i class="fa-regular fa-envelope"></i>
-                                    <input type="email" class="newsletter-input form-control" placeholder="Enter your email">
+                                    <input type="email" class="newsletter-input form-control"
+                                        placeholder="Enter your email">
                                 </div>
                                 <input type="submit" value="Subscribe" class="newsletter-button">
                             </div>
@@ -1025,7 +1369,8 @@
                 <div class="footer-col">
                     <img src="./images/jkessay-logo-w.svg" class="mb-30" alt="">
                     <p class="text_neutral--100">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                     </p>
                 </div>
                 <div class="footer-col">
@@ -1049,20 +1394,20 @@
                     <p class="fw-semibold text_neutral--100 mb-4">Social Media</p>
                     <ul class="social-list">
                         <li><a href="javascript:void(0)">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a></li>
+                                <i class="fa-brands fa-facebook"></i>
+                            </a></li>
                         <li><a href="javascript:void(0)">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a></li>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a></li>
                         <li><a href="javascript:void(0)">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a></li>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a></li>
                         <li><a href="javascript:void(0)">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a></li>
+                                <i class="fa-brands fa-twitter"></i>
+                            </a></li>
                         <li><a href="javascript:void(0)">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a></li>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a></li>
                     </ul>
                 </div>
             </div>

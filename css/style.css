@@ -97,6 +97,11 @@ p {
     color: var(--neutral-600);
 }
 
+.p-default {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .p-large {
     font-size: 24px;
     line-height: 38px;
@@ -109,6 +114,11 @@ p {
 
 .p-small {
     font-size: 15px;
+    line-height: 24px;
+}
+
+.p-supersmall {
+    font-size: 14px;
     line-height: 24px;
 }
 
@@ -194,7 +204,11 @@ ul.list-default {
     color: var(--primary-color);
     background-color: var(--neutral-100);
 }
-
+.upload-button {
+    padding: 10px 30px;
+    color: var(--neutral-700);
+    background-color: var(--secondary-color);
+}
 .button-group {
     display: flex;
     align-items: center;
@@ -214,7 +228,12 @@ ul.list-default {
 .text_neutral--700 {
     color: var(--neutral-700);
 }
-
+.text_neutral--600 {
+    color: var(--neutral-600);
+}
+.text_neutral--500 {
+    color: var(--neutral-500);
+}
 .text_neutral--400 {
     color: var(--neutral-400);
 }
@@ -254,6 +273,191 @@ ul.list-default {
 }
 
 /* Utils ends */
+/* form popup */
+.form-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.4);
+    z-index: 999;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+    /* display: none; */
+
+    transition: all 0.3s ease;
+}
+.form-popup.active {
+    visibility: visible;
+    opacity: 1;
+    /* display: flex; */
+}
+.edit-button,
+.form-heading .popup-close {
+    cursor: pointer;
+}
+.form-popup .confirm-form,
+.form-popup .step-form {
+    border-radius: 15px;
+    background-color: white;
+}
+.confirm-form .form-heading,
+.step-form .form-heading {
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(215, 215, 215, 1);
+}
+.confirm-details,
+.step-form-wrapper {
+    width: 100%;
+    padding: 40px 10%;
+}
+.hero-form-estimate p img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.form-input {
+    border-radius: 10px;   
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px;
+    /* height: 50px; */
+}
+.form-input::placeholder {
+    color: var(--neutral-500);
+}
+.form-divider {
+    height: 10px;
+    width: 100%;
+    background-color: var(--neutral-200);
+    margin: 20px 0;
+}
+/* confirm order popup */
+.details-blk {
+    border-top: 1px solid rgba(115, 115, 115, 0.3);
+    border-bottom: 1px solid rgba(115, 115, 115, 0.3);
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* confirm order popup ends */
+/* multi step form */
+.confirm-form,
+.step-form,
+.step {
+    /* opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease; */
+    display: none;
+}
+.confirm-form.active,
+.step-form.active,
+.step.form-active {
+    /* opacity: 1;
+    visibility: visible; */
+    display: block;
+}
+.confirm-details,
+.step-form-wrapper {
+    height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.step-heading-wrapper,
+.step-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.step-heading-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+.step-heading .step-count {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--neutral-500);
+    border: 1px solid var(--neutral-500);
+}
+.step-heading .step-details {
+    color: var(--neutral-500);
+}
+.step-heading.active .step-count {
+    color: var(--neutral-100);
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+.step-heading.active .step-details{
+    color: var(--neutral-800);
+}
+.step-heading.complete .step-count {
+    color: var(--neutral-800);
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+.step-form-wrapper .select-label {
+    border-radius: 10px;
+}
+
+.upload-file-trigger {
+    position: relative;
+    cursor: pointer;
+    padding: 35px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 21, 41, 0.1);
+}
+.upload-wrapper {
+    max-width: 430px;
+    margin: auto;
+    text-align: center;
+}
+.upload-file {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+.file-name {
+    flex: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.upload-wrapper.active,
+.file-name {
+    display: none;
+}
+.upload-wrapper,
+.file-name.active {
+    display: block;
+}
+/* multi step form ends */
+/* form popup ends */
 /* navigation */
 .top-nav {
     padding: 10px 0;
@@ -270,7 +474,7 @@ ul.list-default {
 .header {
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 888;
     border-bottom: 1px solid var(--neutral-300);
     background-color: var(--body-color);
 }
@@ -1028,11 +1232,14 @@ input[type="radio"]:checked::before {
     padding: 30px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 /* footer ends */
+
 @media (min-width: 1200px) {
     .container {
         width: 1280px;
+    }
+    .confirm-details {
+        height: unset;
     }
 }
 
@@ -1178,6 +1385,11 @@ input[type="radio"]:checked::before {
         margin-bottom: 0;
     }
     /* footer ends */
+    /* step form */
+    .step-heading-wrapper {
+        gap: 30px;
+    }
+    /* step form ends */
 }
 @media (max-width: 767px) {
     h1, .h1 {
@@ -1238,6 +1450,11 @@ input[type="radio"]:checked::before {
         padding: 10px 0;
     }
     /* footer ends */
+    /* step form */
+    .step-heading-wrapper {
+        justify-content: start;
+    }
+    /* step form ends */
 }
 @media (max-width: 576px) {
     /* hero */
@@ -1304,4 +1521,55 @@ input[type="radio"]:checked::before {
         font-size: 20px;
     }
     /* footer ends */
+    /* step form */
+    .confirm-form .form-heading,
+    .step-form .form-heading {
+        padding: 10px 7%;
+    }
+    .form-heading h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .confirm-details,
+    .step-form-wrapper {
+        padding: 20px 7%;
+    }
+    .step-heading-wrapper {
+        gap: 20px;
+    }
+    .step-heading {
+        gap: 10px;
+        flex: 0 0 100%;
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+    .step-details h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 0 !important;
+    }
+    .step-details p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .next-button,
+    .previous-button,
+    .next-popup-button {
+        width: 100%;
+    }
+    .previous-button {
+        display: inline-block;
+        margin-right: 0 !important;
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+    .detail-row {
+        gap: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .confirm-details .confirm-button {
+        width: 100%;
+    }
+    /* step form ends */
 }

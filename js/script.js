@@ -48,13 +48,6 @@ var testSwiper = new Swiper('.testimonial-slider', {
 });
 
 $(function () {
-    // header top
-    // let header = document.querySelector(".header").clientHeight;
-    // let menu = document.querySelector(".menu");
-
-    // $(document).on("resize", function() {
-    //     menu.style.top = header + "px !important";
-    // });
 
     $(".hamburger").on("click", function () {
         $(".menu").toggleClass("active");
@@ -88,7 +81,7 @@ $(function () {
         });
 
         dropdown.on('click', 'li', function () {
-            label.text($(this).text());
+            label.html($(this).html());
         });
     });
 
@@ -98,11 +91,91 @@ $(function () {
     pages = 0;
     for (let i = 1; i <= 400; i++) {
         pages = pages + 275;
-        if ( i == 1) {
+        if (i == 1) {
             options += "<li>" + i + " Page / " + pages + " words" + "</li>";
         } else {
             options += "<li>" + i + " Pages / " + pages + " words" + "</li>";
         }
     }
     $('.loop-options').html(options);
+
+    // form popup
+    let heroFormButton = $(".hero-form-button");
+    let heroButton = $(".hero-button");
+    let popupClose = $(".popup-close");
+
+    let formPopup = $(".form-popup");
+
+    heroFormButton.on('click', function () {
+        formPopup.toggleClass("active");
+    });
+    heroButton.on('click', function () {
+        formPopup.toggleClass("active");
+    });
+    popupClose.on('click', function () {
+        formPopup.toggleClass("active");
+    });
+
+    // confirm popup
+    let nextPopupBtn = $('.step-2 .next-popup-button');
+    let confirmForm = $('.form-popup .confirm-form');
+    let stepForm = $('.form-popup .step-form');
+
+    nextPopupBtn.on('click', function () {
+        stepForm.toggleClass("active");
+        confirmForm.toggleClass("active");
+    });
+
+    // file name update on upload
+    $(".upload-file").on("change", function () {
+        let prevLabel = $(this).prev(".file-name");
+        let file = $(".upload-file")[0].files[0].name;
+
+        prevLabel.html(file);
+
+        $(".upload-wrapper").addClass("active");
+        $(".file-name").addClass("active");
+    });
 });
+
+// step form functionality
+let steps = Array.from(document.querySelectorAll("form .step"));
+let nextBtn = document.querySelectorAll("form .next-button");
+let prevBtn = document.querySelectorAll("form .previous-button");
+
+let form = document.querySelector("form");
+
+let stepHeading1 = document.querySelectorAll(".step-heading")[0];
+let stepHeading2 = document.querySelectorAll(".step-heading")[1];
+
+nextBtn.forEach((button) => {
+    button.addEventListener("click", function () {
+        changeStep("next");
+        stepHeading1.classList.add('complete');
+        stepHeading1.querySelector('.step-count').innerHTML = '<i class="fa-regular fa-check"></i>'
+        stepHeading2.classList.add('active');
+    })
+});
+prevBtn.forEach((button) => {
+    button.addEventListener("click", function () {
+        changeStep("prev");
+        stepHeading1.classList.remove('complete');
+        stepHeading2.classList.remove('active');
+    })
+});
+function changeStep(btn) {
+    let index = 0;
+    let active = document.querySelector('.form-active');
+
+    index = steps.indexOf(active);
+    steps[index].classList.remove("form-active");
+
+    if (btn === "next") {
+        index++;
+    } else if (btn === "prev") {
+        index--;
+    }
+
+    steps[index].classList.add("form-active");
+
+}
