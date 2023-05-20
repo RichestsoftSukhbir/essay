@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <!-- favicon link -->
+    <link rel="icon" href="./images/jk-logo.svg">
+
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +20,17 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- select2 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <!-- Country Flags CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
 
     <!-- IntlTelInput CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Fontawesome Link -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
@@ -74,7 +83,7 @@
                                             <label for="email-address" class="form-label fw-500 text_neutral--800">Email
                                                 Address</label>
                                             <input type="email" name="email-address" class="form-control input-control"
-                                                 placeholder="Enter your email address">
+                                                placeholder="Enter your email address">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -82,17 +91,20 @@
                                             <label for="password"
                                                 class="form-label fw-500 text_neutral--800">Password</label>
                                             <input type="password" name="password" class="form-control input-control"
-                                                 placeholder="Enter your password">
+                                                placeholder="Enter your password">
                                         </div>
                                     </div>
                                     <div class="text-end">
-                                        <a href="javascript:void(0)" class="text_neutral--500 p-small forgot-trigger">Forgot
+                                        <a href="javascript:void(0)"
+                                            class="text_neutral--500 p-small forgot-trigger">Forgot
                                             Password?</a>
                                     </div>
                                     <div class="my-3">
-                                        <button type="submit" class="primary-button border-0 w-100">Login</button>
+                                        <!-- <button type="submit" class="primary-button border-0 w-100">Login</button> -->
+                                        <a href="javascript:void(0)" class="primary-button w-100">Login</a>
                                     </div>
-                                    <p>Don’t have an account? <a href="javascript:void(0)" class="theme-link signup-trigger">Signup</a>
+                                    <p>Don’t have an account? <a href="javascript:void(0)"
+                                            class="theme-link signup-trigger">Signup</a>
                                     </p>
                                 </form>
                             </div>
@@ -113,7 +125,7 @@
                                             <label for="email-address" class="form-label fw-500 text_neutral--800">Email
                                                 Address</label>
                                             <input type="email" name="email-address" class="form-control input-control"
-                                                 placeholder="Enter your email address">
+                                                placeholder="Enter your email address">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -121,67 +133,81 @@
                                             <label for="password"
                                                 class="form-label fw-500 text_neutral--800">Password</label>
                                             <input type="password" name="password" class="form-control input-control"
-                                                 placeholder="Enter your password">
+                                                placeholder="Enter your password">
                                         </div>
                                     </div>
                                     <div class="text-end">
                                         <div class="d-flex align-items-center gap-2">
                                             <input type="checkbox" class="checkbox-control" name="remember"
                                                 id="remember">
-                                            <label for="remember" class="p-default text_neutral--500">Remember me</label>
+                                            <label for="remember" class="p-default text_neutral--500">Remember
+                                                me</label>
                                         </div>
                                     </div>
                                     <div class="my-3">
                                         <button type="submit" class="primary-button border-0 w-100">Signup</button>
                                     </div>
-                                    <p>Already have an account? <a href="javascript:void(0)" class="theme-link login-trigger">Login</a>
+                                    <p>Already have an account? <a href="javascript:void(0)"
+                                            class="theme-link login-trigger">Login</a>
                                     </p>
                                 </form>
                             </div>
                             <div class="right-forms forgot-password w-100">
                                 <h2>Forgot Password</h2>
-                                <p class="mb-30">Enter the email address associated with your account, and we’ll email you a link to reset your password.</p>
+                                <p class="mb-30">Enter the email address associated with your account, and we’ll email
+                                    you a link to reset your password.</p>
                                 <form action="" method="post">
                                     <div class="row mb-30">
                                         <div class="col-lg-12">
                                             <label for="email-address" class="form-label fw-500 text_neutral--800">Email
                                                 Address</label>
                                             <input type="email" name="email-address" class="form-control input-control"
-                                                 placeholder="Enter your email address">
+                                                placeholder="Enter your email address">
                                         </div>
                                     </div>
                                     <div class="my-3">
-                                        <button type="button" class="primary-button border-0 w-100 reset-trigger">Send Resend Link</button>
+                                        <button type="button" class="primary-button border-0 w-100 reset-trigger">Send
+                                            Resend Link</button>
                                     </div>
-                                    <p class="text-center">Go back to <a href="javascript:void(0)" class="theme-link login-trigger">Login</a>
+                                    <p class="text-center">Go back to <a href="javascript:void(0)"
+                                            class="theme-link login-trigger">Login</a>
                                     </p>
                                 </form>
                             </div>
                             <div class="right-forms reset-link w-100">
                                 <h2>Forgot Password</h2>
-                                <p class="mb-3">Check your purposetest942@gmail.com inbox for instructions from us on how to reset your password.</p>
+                                <p class="mb-3">Check your purposetest942@gmail.com inbox for instructions from us on
+                                    how to reset your password.</p>
                                 <div class="my-3">
-                                    <button type="button" class="primary-button newsletter-button border-0 w-100 change-pass-trigger">Got it, go to login page!</button>
+                                    <button type="button"
+                                        class="primary-button newsletter-button border-0 w-100 change-pass-trigger">Got
+                                        it, go to login page!</button>
                                 </div>
-                                <p class="text-center">Go back to <a href="javascript:void(0)" class="theme-link login-trigger">Login</a>
+                                <p class="text-center">Go back to <a href="javascript:void(0)"
+                                        class="theme-link login-trigger">Login</a>
                                 </p>
                             </div>
                             <div class="right-forms change-password w-100">
                                 <h2 class="mb-30">Forgot Password</h2>
                                 <div class="row mb-3">
                                     <div class="col-lg-12">
-                                        <label for="password" class="form-label fw-500 text_neutral--800">New Password</label>
-                                        <input type="password" name="password" class="form-control input-control"  placeholder="Enter new password">
+                                        <label for="password" class="form-label fw-500 text_neutral--800">New
+                                            Password</label>
+                                        <input type="password" name="password" class="form-control input-control"
+                                            placeholder="Enter new password">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-lg-12">
-                                        <label for="c-password" class="form-label fw-500 text_neutral--800">Confirm New Password</label>
-                                        <input type="c-password" name="c-password" class="form-control input-control" id="c-password" placeholder="Confirm new password">
+                                        <label for="c-password" class="form-label fw-500 text_neutral--800">Confirm New
+                                            Password</label>
+                                        <input type="password" name="c-password" class="form-control input-control"
+                                            id="c-password" placeholder="Confirm new password">
                                     </div>
                                 </div>
                                 <div class="my-3">
-                                    <button type="button" class="primary-button border-0 w-100 login-trigger">Save & Login</button>
+                                    <button type="button" class="primary-button border-0 w-100 login-trigger">Save &
+                                        Login</button>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +219,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="form-popup">
         <div class="container">
             <form action="" method="post" class="step-form active">
@@ -228,37 +254,34 @@
                     </div>
                     <div class="spacer-y">
                         <div class="step step-1 form-active">
-                            <div class="row g-3">
+                            <div class="row gx-3">
                                 <div class="col-lg-6 col-md-6">
                                     <label for="" class="form-label fw-500">
                                         Assignment type:
                                     </label>
-                                    <div class="theme-select mb-md-3">
-                                        <label for="" class="select-label">Select Assignment type *</label>
-                                        <ul class="select-options">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
-                                            <li>Item 4</li>
-                                            <li>Item 5</li>
-                                        </ul>
-                                    </div>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Select Assignment type *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <label for="" class="form-label fw-500">
                                         Assignment language:
                                     </label>
-                                    <div class="theme-select mb-3">
-                                        <label for="" class="select-label"><i class="fi fi-gb"></i> English</label>
-                                        <ul class="select-options">
-                                            <li><i class="fi fi-gb"></i> English</li>
-                                            <li><i class="fi fi-in"></i> Hindi</li>
-                                            <li><i class="fi fi-fr"></i> French</li>
-                                            <li><i class="fi fi-it"></i> Italian</li>
-                                            <li><i class="fi fi-jp"></i> Japanese</li>
-                                            <li><i class="fi fi-cn"></i> Chinese</li>
-                                        </ul>
-                                    </div>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Select Assignment type *">
+                                        <option value="english"><i class="fi fi-gb"></i> English</option>
+                                        <option value="2"><i class="fi fi-in"></i> Hindi</option>
+                                        <option value="3"><i class="fi fi-fr"></i> French</option>
+                                        <option value="4"><i class="fi fi-it"></i> Italian</option>
+                                        <option value="5"><i class="fi fi-jp"></i> Japanese</option>
+                                        <option value="5"><i class="fi fi-cn"></i> Chinese</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row g-3">
@@ -266,41 +289,38 @@
                                     <label for="" class="form-label fw-500">
                                         Assignment details:
                                     </label>
-                                    <div class="theme-select mb-3">
-                                        <label for="" class="select-label">Services *</label>
-                                        <ul class="select-options">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
-                                            <li>Item 4</li>
-                                            <li>Item 5</li>
-                                        </ul>
-                                    </div>
-                                    <div class="theme-select mb-md-3">
-                                        <label for="" class="select-label">Education Level *</label>
-                                        <ul class="select-options">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
-                                            <li>Item 4</li>
-                                            <li>Item 5</li>
-                                        </ul>
-                                    </div>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Services *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Education Level *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <label for="" class="form-label fw-500">
                                         Deadline:
                                     </label>
-                                    <div class="theme-select mb-3">
-                                        <label for="" class="select-label">Your Deadline *</label>
-                                        <ul class="select-options">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
-                                            <li>Item 4</li>
-                                            <li>Item 5</li>
-                                        </ul>
-                                    </div>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Your Deadline *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row g-3">
@@ -312,40 +332,35 @@
                                         <div class="col-md-4 col-sm-4">
                                             <label for=""
                                                 class="form-label text_neutral--600 p-small mb-1">Pages</label>
-                                            <div class="theme-select">
-                                                <label for="" class="select-label">1</label>
-                                                <ul class="select-options">
-                                                    <li>1</li>
-                                                    <li>2</li>
-                                                    <li>3</li>
-                                                    <li>4</li>
-                                                    <li>5</li>
-                                                </ul>
-                                            </div>
+                                            <select class="theme-select" name="state"
+                                                data-placeholder="Select Pages *">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-4 col-sm-4">
                                             <label for=""
                                                 class="form-label text_neutral--600 p-small mb-1">Words</label>
-                                            <div class="theme-select">
-                                                <label for="" class="select-label">200</label>
-                                                <ul class="select-options">
-                                                    <li>200</li>
-                                                    <li>300</li>
-                                                    <li>400</li>
-                                                    <li>400</li>
-                                                </ul>
-                                            </div>
+                                            <select class="theme-select" name="state"
+                                                data-placeholder="Select Words *">
+                                                <option value="200">200</option>
+                                                <option value="400">400</option>
+                                                <option value="600">600</option>
+                                                <option value="800">800</option>
+                                                <option value="1000">1000</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-4 col-sm-4">
                                             <label for="" class="form-label text_neutral--600 p-small mb-1">Line
                                                 Spacing:</label>
-                                            <div class="theme-select">
-                                                <label for="" class="select-label">Double</label>
-                                                <ul class="select-options">
-                                                    <li>Single</li>
-                                                    <li>Double</li>
-                                                </ul>
-                                            </div>
+                                            <select class="theme-select" name="state"
+                                                data-placeholder="Select Spacing *">
+                                                <option value="single">Single</option>
+                                                <option value="double">Double</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -378,41 +393,38 @@
                                     <label for="" class="form-label fw-500">
                                         Sources & Citation Style:
                                     </label>
-                                    <div class="theme-select mb-3">
-                                        <label for="" class="select-label">Any</label>
-                                        <ul class="select-options">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
-                                            <li>Item 4</li>
-                                            <li>Item 5</li>
-                                        </ul>
-                                    </div>
-                                    <div class="theme-select mb-md-3">
-                                        <label for="" class="select-label">Select Style</label>
-                                        <ul class="select-options">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
-                                            <li>Item 4</li>
-                                            <li>Item 5</li>
-                                        </ul>
-                                    </div>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Any">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Select Style">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <label for="" class="form-label fw-500">
                                         Subject
                                     </label>
-                                    <div class="theme-select mb-3">
-                                        <label for="" class="select-label">Select Subject</label>
-                                        <ul class="select-options">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
-                                            <li>Item 4</li>
-                                            <li>Item 5</li>
-                                        </ul>
-                                    </div>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Select Subject">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row g-3">
@@ -467,19 +479,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="row g-3 bottom-row justify-content-lg-between align-items-end mt-3">
-                            <div class="col-lg-5">
-                                <div class="hero-form-estimate">
-                                    <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="text-end">
-                                    <a href="#" class="text_neutral--500 fw-bold me-3"><i class="fa-regular fa-arrow-left"></i> Previous Step</a>
-                                    <a href="#" class="primary-button">Next Step <i class="fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </form>
@@ -534,8 +533,8 @@
                                                 PM</span><span>(In 15 Days)</span></p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7">
                                         <div class="hero-form-estimate">
                                             <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img
                                                     src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
@@ -544,7 +543,8 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-lg-12 text-center">
-                                        <a href="javascript:void(0)" class="primary-button confirm-button">Confirm &
+                                        <a href="javascript:void(0)" class="primary-button confirm-button w-100">Confirm
+                                            &
                                             Place Order <i class="fa-regular fa-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -557,7 +557,29 @@
     </section>
 
     <section class="top-nav">
-        <p>JKEssay – 助你卓越</p>
+        <div class="container top-nav-row">
+            <div class="top-nav-left">
+                <p>JKEssay – 助你卓越</p>
+            </div>
+            <div class="top-nav-right">
+                <div class="nav-contact">
+                    <div class="contact-icon">
+                        <img src="./images/sms.svg" alt="">
+                    </div>
+                    <div class="contact-detail">
+                        <a href="mailto:support@jkessay.com" class="text_neutral--800">support@jkessay.com</a>
+                    </div>
+                </div>
+                <div class="nav-contact">
+                    <div class="contact-icon">
+                        <img src="./images/baidu.svg" alt="">
+                    </div>
+                    <div class="contact-detail">
+                        <a href="javascript:void(0)" class="text_neutral--800">jkessay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <header class="header">
         <div class="navigation container">
@@ -570,22 +592,37 @@
                 <ul class="menu">
                     <li>
                         <a href="./index.html">
-                            Home
+                            首页
                         </a>
                     </li>
                     <li>
                         <a href="./who-we-are.html">
-                            Who We Are
+                            关于我们
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.jkessay.com/essay" target="_blank">
+                            案例
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.jkessay.com/dissertation" target="_blank">
+                            案例
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.jkessay.com/boke" target="_blank">
+                            博客
                         </a>
                     </li>
                     <li>
                         <a href="./faq.html">
-                            FAQ
+                            常见问题
                         </a>
                     </li>
                     <li>
                         <a href="./contact.html" class="active">
-                            Contact Us
+                            联系我们
                         </a>
                     </li>
                     <li>
@@ -613,17 +650,17 @@
             <div class="container spacer-y">
                 <div class="row g-3 gx-lg-5 align-items-center">
                     <div class="col-lg-6 col-md-6">
-                        <h1 class="mb-3">Contact Us</h1>
-                        <p class="mb-3">
+                        <h1 class="mb-3 wow animate__animated animate__fadeInUp">Contact Us</h1>
+                        <p class="mb-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                             Greetings, customers! If you have questions regarding our service or order, please do not
                             hesitate to contact us via mail.
                         </p>
-                        <p>
+                        <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                             Any questions you might have can be answered by our Customer Support Team 24/7. Please
                             contact us if you have any questions!
                         </p>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                         <img src="./images/contact.svg" class="w-100" alt="">
                     </div>
                 </div>
@@ -632,35 +669,38 @@
         <section class="contact-wrapper bg-white">
             <div class="container spacer-y">
                 <div class="row g-3 gx-lg-5 align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 wow animate__animated animate__fadeInUp">
                         <img src="./images/contact-image.png" class="w-100 contact-image-left" alt="">
                     </div>
                     <div class="col-lg-6">
-                        <h2>Get in touch</h2>
-                        <p class="mb-30">Our friendly team would love to hear from you.</p>
+                        <h2 class="wow animate__animated animate__fadeInUp">Get in touch</h2>
+                        <p class="mb-30 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Our friendly team would love to hear from you.</p>
                         <form action="" method="post">
                             <div class="row g-3 mb-3">
-                                <div class="col-md-6">
-                                    <label for="first_name" class="form-label p-supersmall text_gray-700">First Name</label>
-                                    <input type="text" name="first_name" class="form-control input-control" id="first_name"
-                                        placeholder="First name">
+                                <div class="col-md-6 wow animate__animated animate__fadeInUp">
+                                    <label for="first_name" class="form-label p-supersmall text_gray-700">First
+                                        Name</label>
+                                    <input type="text" name="first_name" class="form-control input-control"
+                                        id="first_name" placeholder="First name">
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="last_name" class="form-label p-supersmall text_gray-700">Last name</label>
-                                    <input type="text" name="last_name" class="form-control input-control" id="last_name"
-                                        placeholder="Last name">
+                                <div class="col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                    <label for="last_name" class="form-label p-supersmall text_gray-700">Last
+                                        name</label>
+                                    <input type="text" name="last_name" class="form-control input-control"
+                                        id="last_name" placeholder="Last name">
                                 </div>
                             </div>
                             <div class="row g-3 mb-3">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                                     <label for="email" class="form-label p-supersmall text_gray-700">Email</label>
                                     <input type="email" name="email" class="form-control input-control" id="email"
                                         placeholder="you@company.com">
                                 </div>
                             </div>
                             <div class="row g-3 mb-3">
-                                <div class="col-lg-12">
-                                    <label for="phone" class="form-label p-supersmall text_gray-700">Phone number</label>
+                                <div class="col-lg-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                    <label for="phone" class="form-label p-supersmall text_gray-700">Phone
+                                        number</label>
                                     <div class="form-group">
                                         <input type="tel" name="phone" class="form-control input-control" id="phone"
                                             placeholder="+1 (555) 000-0000">
@@ -668,23 +708,25 @@
                                 </div>
                             </div>
                             <div class="row g-3 mb-3">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                                     <label for="message" class="form-label p-supersmall text_gray-700">Message</label>
                                     <textarea name="message" id="message" class="form-control theme-control"
                                         rows="5"></textarea>
                                 </div>
                             </div>
                             <div class="row g-3 mb-30">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                                     <div class="d-flex align-items-center gap-2">
                                         <input type="checkbox" class="checkbox-control" name="privacy-policy"
                                             id="privacy-policy">
-                                        <label for="privacy-policy" class="p-default text_neutral--500">You agree to our friendly <a href="javascript:void(0)" class="text-decoration-underline">privacy policy</a>.</label>
+                                        <label for="privacy-policy" class="p-default text_neutral--500">You agree to our
+                                            friendly <a href="javascript:void(0)"
+                                                class="text-decoration-underline">privacy policy</a>.</label>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <button type="submit" class="primary-button w-100 border-0">
+                                <button type="submit" class="primary-button w-100 border-0 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                                     Send Message
                                 </button>
                             </div>
@@ -768,7 +810,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p class="text-center text_neutral--100">&copy; <span class="year"></span> Jkessay. All rights reserved.</p>
+            <p class="text-center text_neutral--100">&copy; <span class="year"></span> <a href="./index.html"
+                    class="theme-link">Jkessay</a>. All rights reserved.</p>
         </div>
     </footer>
 
@@ -780,9 +823,15 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
+    <!-- select2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <!-- IntlTelInput JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput-jquery.min.js"></script>
+
+    <!-- Wow JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

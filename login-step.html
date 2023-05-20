@@ -1,0 +1,1093 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login Step Form | jkessay</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- favicon link -->
+    <link rel="icon" href="./images/jk-logo.svg">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- select2 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Country Flags CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+
+    <!-- IntlTelInput CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- profile created popup -->
+    <section class="profile-created-popup">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="popup-content-wrapper">
+                        <img src="./images/account-created.svg" class="img-fluid mb-30" alt="">
+                        <h2>Congratulations!!</h2>
+                        <p class="p-supersmall my-3">Your profile details have been successfully submitted. Your details are now being reviewed by admin. You will receive an email in your inbox. Thanks you. </p>
+                        <a href="./index.html" class="primary-button w-100 popup-trigger">Check E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login/signup popup -->
+    <section class="login-signup-popup">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="popup-wrapper">
+                        <div class="popup-left">
+                            <div class="quote-wrapper">
+                                <blockquote class="mb-0 quote-text">
+                                    <p class="mb-4">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy.
+                                    </p>
+                                    <p>
+                                        Thanks You!
+                                    </p>
+                                </blockquote>
+                                <div class="user-details">
+                                    <div class="user-image">
+                                        <img src="./images/user.png" alt="">
+                                    </div>
+                                    <div class="user-info">
+                                        <h4 class="text_neutral--800">Jimmy Alexander</h4>
+                                        <p class="p-default text_neutral--700">
+                                            CEO of JKessay
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-right">
+                            <div class="right-forms login w-100">
+                                <h2>Let’s Join With Us</h2>
+                                <p class="mb-30">Join faster gets and the benefits more faster.</p>
+                                <form action="" method="post">
+                                    <div class="row mb-3">
+                                        <div class="col-lg-12">
+                                            <label for="email-address" class="form-label fw-500 text_neutral--800">Email
+                                                Address</label>
+                                            <input type="email" name="email-address" class="form-control input-control"
+                                                placeholder="Enter your email address">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-lg-12">
+                                            <label for="password"
+                                                class="form-label fw-500 text_neutral--800">Password</label>
+                                            <input type="password" name="password" class="form-control input-control"
+                                                placeholder="Enter your password">
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <a href="javascript:void(0)"
+                                            class="text_neutral--500 p-small forgot-trigger">Forgot
+                                            Password?</a>
+                                    </div>
+                                    <div class="my-3">
+                                        <!-- <button type="submit" class="primary-button border-0 w-100">Login</button> -->
+                                        <a href="./login-step.html" class="primary-button w-100">Login</a>
+                                    </div>
+                                    <p>Don’t have an account? <a href="javascript:void(0)"
+                                            class="theme-link signup-trigger">Signup</a>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="right-forms signup w-100">
+                                <h2>Let’s Join With Us</h2>
+                                <p class="mb-30">Join faster gets and the benefits more faster.</p>
+                                <form action="" method="post">
+                                    <div class="row mb-3">
+                                        <div class="col-lg-12">
+                                            <label for="full-name" class="form-label fw-500 text_neutral--800">Full
+                                                Name</label>
+                                            <input type="text" name="full-name" class="form-control input-control"
+                                                id="full-name" placeholder="Enter your full name">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-lg-12">
+                                            <label for="email-address" class="form-label fw-500 text_neutral--800">Email
+                                                Address</label>
+                                            <input type="email" name="email-address" class="form-control input-control"
+                                                placeholder="Enter your email address">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-lg-12">
+                                            <label for="password"
+                                                class="form-label fw-500 text_neutral--800">Password</label>
+                                            <input type="password" name="password" class="form-control input-control"
+                                                placeholder="Enter your password">
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <input type="checkbox" class="checkbox-control" name="remember"
+                                                id="remember">
+                                            <label for="remember" class="p-default text_neutral--500">Remember
+                                                me</label>
+                                        </div>
+                                    </div>
+                                    <div class="my-3">
+                                        <button type="submit" class="primary-button border-0 w-100">Signup</button>
+                                    </div>
+                                    <p>Already have an account? <a href="javascript:void(0)"
+                                            class="theme-link login-trigger">Login</a>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="right-forms forgot-password w-100">
+                                <h2>Forgot Password</h2>
+                                <p class="mb-30">Enter the email address associated with your account, and we’ll email
+                                    you a link to reset your password.</p>
+                                <form action="" method="post">
+                                    <div class="row mb-30">
+                                        <div class="col-lg-12">
+                                            <label for="email-address" class="form-label fw-500 text_neutral--800">Email
+                                                Address</label>
+                                            <input type="email" name="email-address" class="form-control input-control"
+                                                placeholder="Enter your email address">
+                                        </div>
+                                    </div>
+                                    <div class="my-3">
+                                        <button type="button" class="primary-button border-0 w-100 reset-trigger">Send
+                                            Resend Link</button>
+                                    </div>
+                                    <p class="text-center">Go back to <a href="javascript:void(0)"
+                                            class="theme-link login-trigger">Login</a>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="right-forms reset-link w-100">
+                                <h2>Forgot Password</h2>
+                                <p class="mb-3">Check your purposetest942@gmail.com inbox for instructions from us on
+                                    how to reset your password.</p>
+                                <div class="my-3">
+                                    <button type="button"
+                                        class="primary-button newsletter-button border-0 w-100 change-pass-trigger">Got
+                                        it, go to login page!</button>
+                                </div>
+                                <p class="text-center">Go back to <a href="javascript:void(0)"
+                                        class="theme-link login-trigger">Login</a>
+                                </p>
+                            </div>
+                            <div class="right-forms change-password w-100">
+                                <h2 class="mb-30">Forgot Password</h2>
+                                <div class="row mb-3">
+                                    <div class="col-lg-12">
+                                        <label for="password" class="form-label fw-500 text_neutral--800">New
+                                            Password</label>
+                                        <input type="password" name="password" class="form-control input-control"
+                                            placeholder="Enter new password">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-lg-12">
+                                        <label for="c-password" class="form-label fw-500 text_neutral--800">Confirm New
+                                            Password</label>
+                                        <input type="password" name="c-password" class="form-control input-control"
+                                            id="c-password" placeholder="Confirm new password">
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <button type="button" class="primary-button border-0 w-100 login-trigger">Save &
+                                        Login</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-signup-close">
+                            <i class="fa-regular fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-popup">
+        <div class="container">
+            <form action="" method="post" class="step-form active">
+                <div class="form-heading">
+                    <div class="row gx-3 align-items-center">
+                        <div class="col-lg-6 col-9">
+                            <h3 class="text_neutral--700 mb-0">Place a new order</h3>
+                        </div>
+                        <div class="col-lg-6 col-3">
+                            <div class="popup-close text-end">
+                                <i class="fa-regular fa-times h4 m-0"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-form-wrapper">
+                    <div class="step-heading-wrapper">
+                        <div class="step-heading active">
+                            <div class="step-count">1</div>
+                            <div class="step-details">
+                                <h4 class="mb-2">Order Requirements</h4>
+                                <p class="p-default">Fill in your order requirements.</p>
+                            </div>
+                        </div>
+                        <div class="step-heading">
+                            <div class="step-count">2</div>
+                            <div class="step-details">
+                                <h4 class="mb-2">Order Details</h4>
+                                <p class="p-default">Add your order details.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-y">
+                        <div class="step step-1 form-active">
+                            <div class="row gx-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment type:
+                                    </label>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Select Assignment type *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment language:
+                                    </label>
+                                    <select class="theme-select" name="state"
+                                        data-placeholder="Select Assignment type *">
+                                        <option value="english"><i class="fi fi-gb"></i> English</option>
+                                        <option value="2"><i class="fi fi-in"></i> Hindi</option>
+                                        <option value="3"><i class="fi fi-fr"></i> French</option>
+                                        <option value="4"><i class="fi fi-it"></i> Italian</option>
+                                        <option value="5"><i class="fi fi-jp"></i> Japanese</option>
+                                        <option value="5"><i class="fi fi-cn"></i> Chinese</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment details:
+                                    </label>
+                                    <select class="theme-select" name="state" data-placeholder="Services *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                    <select class="theme-select" name="state" data-placeholder="Education Level *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Deadline:
+                                    </label>
+                                    <select class="theme-select" name="state" data-placeholder="Your Deadline *">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <label for="" class="form-label fw-500">
+                                        Assignment size:
+                                    </label>
+                                    <div class="row g-3">
+                                        <div class="col-md-4 col-sm-4">
+                                            <label for=""
+                                                class="form-label text_neutral--600 p-small mb-1">Pages</label>
+                                            <select class="theme-select" name="state" data-placeholder="Select Pages *">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <label for=""
+                                                class="form-label text_neutral--600 p-small mb-1">Words</label>
+                                            <select class="theme-select" name="state" data-placeholder="Select Words *">
+                                                <option value="200">200</option>
+                                                <option value="400">400</option>
+                                                <option value="600">600</option>
+                                                <option value="800">800</option>
+                                                <option value="1000">1000</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <label for="" class="form-label text_neutral--600 p-small mb-1">Line
+                                                Spacing:</label>
+                                            <select class="theme-select" name="state"
+                                                data-placeholder="Select Spacing *">
+                                                <option value="single">Single</option>
+                                                <option value="double">Double</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 bottom-row justify-content-lg-between align-items-end mt-3">
+                                <div class="col-lg-5">
+                                    <div class="hero-form-estimate">
+                                        <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img
+                                                src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-end">
+                                        <a href="javascript:void(0)" class="primary-button next-button">Next Step <i
+                                                class="fa-regular fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step-2">
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <label for="assignment_topic" class="form-label fw-500">* Assignment Topic:</label>
+                                    <input type="text" name="assignment_topic" class="form-control form-input mb-3"
+                                        id="assignment_topic" placeholder="Type your topic here">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Sources & Citation Style:
+                                    </label>
+                                    <select class="theme-select" name="state" data-placeholder="Any">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                    <select class="theme-select" name="state" data-placeholder="Select Style">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <label for="" class="form-label fw-500">
+                                        Subject
+                                    </label>
+                                    <select class="theme-select" name="state" data-placeholder="Select Subject">
+                                        <option value="" hidden></option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <label for="instructions" class="form-label fw-500">
+                                        * Instructions:
+                                    </label>
+                                    <textarea name="instructions" id="instructions" rows="3"
+                                        class="form-control form-input"
+                                        placeholder="Type your Instructions here"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-divider"></div>
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <label for="upload-file" class="form-label fw-500">
+                                        Upload Files
+                                    </label>
+                                    <label for="upload-file" class="upload-file-trigger">
+                                        <div class="upload-wrapper">
+                                            <img src="./images/file-upload.svg" alt="">
+                                            <p class="p-supersmall my-3">
+                                                Click or drag and drop multiple files here. Files containing personal
+                                                information or any other banned files are prohibited.
+                                            </p>
+                                        </div>
+                                        <p class="file-name text-center"></p>
+                                        <input type="file" name="upload-file" class="upload-file" id="upload-file">
+                                        <div class="text-center mt-3">
+                                            <button type="button" class="primary-button upload-button border-0">
+                                                Browse Files
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row g-3 bottom-row justify-content-lg-between align-items-end mt-3">
+                                <div class="col-lg-5">
+                                    <div class="hero-form-estimate">
+                                        <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img
+                                                src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-end">
+                                        <a href="javascript:void(0)"
+                                            class="text_neutral--500 fw-bold me-3 previous-button"><i
+                                                class="fa-regular fa-arrow-left"></i> Previous Step</a>
+                                        <a href="javascript:void(0)" class="primary-button next-popup-button">Next Step
+                                            <i class="fa-regular fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="confirm-form">
+                        <div class="form-heading">
+                            <div class="row gx-3 align-items-center">
+                                <div class="col-lg-6 col-9">
+                                    <h3 class="text_neutral--700 mb-0">Confirm order details</h3>
+                                </div>
+                                <div class="col-lg-6 col-3">
+                                    <div class="popup-close text-end">
+                                        <i class="fa-regular fa-times h4 m-0"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm-details">
+                            <div class="row align-items-center mb-2">
+                                <div class="col-6">
+                                    <p class="p-supersmall text_neutral--500">Assignment Topic</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text_neutral--500 text-end edit-button"><i
+                                            class="fa-light fa-pen-to-square"></i></p>
+                                </div>
+                            </div>
+                            <div class="details-wrapper">
+                                <h6 class="m-0">Accounts</h6>
+                                <div class="details-blk">
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Assignment Type: <span
+                                                class="p-default text_neutral--800 fw-500">Accounts</span></p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Pages/Words: <span
+                                                class="p-default text_neutral--800 fw-500">1 pages / 275 words (Double
+                                                spacing)</span></p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Service: <span
+                                                class="p-default text_neutral--800 fw-500">Proofreading</span></p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="detail-row p-supersmall text_neutral--500">Education Level: <span
+                                                class="p-default text_neutral--800 fw-500">College</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="detail-row p-supersmall text_neutral--500">Your Deadline: <span
+                                                class="p-default text_neutral--800 fw-500">Dec 22, 02:49
+                                                PM</span><span>(In 15 Days)</span></p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7">
+                                        <div class="hero-form-estimate">
+                                            <p class="p-small text-center text_neutral--100">Estimated price: ￥100<img
+                                                    src="./images/fire-iphone-emoji.png" class="fire" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-12 text-center">
+                                        <a href="javascript:void(0)" class="primary-button confirm-button w-100">Confirm
+                                            &
+                                            Place Order <i class="fa-regular fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-nav">
+        <div class="container top-nav-row">
+            <div class="top-nav-left">
+                <p>JKEssay – 助你卓越</p>
+            </div>
+            <div class="top-nav-right">
+                <div class="nav-contact">
+                    <div class="contact-icon">
+                        <img src="./images/sms.svg" alt="">
+                    </div>
+                    <div class="contact-detail">
+                        <a href="mailto:support@jkessay.com" class="text_neutral--800">support@jkessay.com</a>
+                    </div>
+                </div>
+                <div class="nav-contact">
+                    <div class="contact-icon">
+                        <img src="./images/baidu.svg" alt="">
+                    </div>
+                    <div class="contact-detail">
+                        <a href="javascript:void(0)" class="text_neutral--800">jkessay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="navigation container">
+            <div class="item-left">
+                <a href="./index.html">
+                    <img src="./images/jkessay-logo.svg" class="logo" alt="">
+                </a>
+            </div>
+            <div class="item-right">
+                <ul class="menu">
+                    <li>
+                        <div class="button-group">
+                            <a href="javascript:void(0)" class="secondary-button login-trigger">
+                                Login
+                            </a>
+                            <a href="javascript:void(0)" class="primary-button signup-trigger">
+                                Sign Up
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-step-section">
+            <div class="container spacer-y">
+                <form action="" method="post" class="login-step-wrapper">
+                    <div class="step-heading-wrapper">
+                        <div class="step-heading active">
+                            <div class="step-count">1</div>
+                            <div class="step-details">
+                                <h4 class="mb-2">Login to your account</h4>
+                                <p class="p-default">Fill in your order requirements.</p>
+                            </div>
+                        </div>
+                        <div class="step-heading">
+                            <div class="step-count">2</div>
+                            <div class="step-details">
+                                <h4 class="mb-2">Complete the profile</h4>
+                                <p class="p-default">Add your order details.</p>
+                            </div>
+                        </div>
+                        <div class="step-heading">
+                            <div class="step-count">3</div>
+                            <div class="step-details">
+                                <h4 class="mb-2">Write an essay sample</h4>
+                                <p class="p-default">Add your order details.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-y pb-0">
+                        <div class="login-step login-step-1 d-block">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="email-address" class="form-label fw-500 text_neutral--800">Email
+                                            Address</label>
+                                        <input type="email" name="email-address" class="form-control input-control"
+                                            placeholder="Enter your email address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="captcha" class="form-label fw-500 text_neutral--800">Captcha</label>
+                                        <input type="text" name="captcha" class="form-control input-control"
+                                            placeholder="Enter here">
+                                    </div>
+                                    <div class="mb-30">
+                                        <img src="./images/captcha-demo.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0)" class="primary-button w-100 next-step">Continue <svg
+                                                width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.43 13.8201C12.24 13.8201 12.05 13.7501 11.9 13.6001C11.61 13.3101 11.61 12.8301 11.9 12.5401L17.44 7.00012L11.9 1.46012C11.61 1.17012 11.61 0.690117 11.9 0.400117C12.19 0.110117 12.67 0.110117 12.96 0.400117L19.03 6.47012C19.32 6.76012 19.32 7.24012 19.03 7.53012L12.96 13.6001C12.81 13.7501 12.62 13.8201 12.43 13.8201Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M18.33 7.75012H1.5C1.09 7.75012 0.75 7.41012 0.75 7.00012C0.75 6.59012 1.09 6.25012 1.5 6.25012H18.33C18.74 6.25012 19.08 6.59012 19.08 7.00012C19.08 7.41012 18.74 7.75012 18.33 7.75012Z"
+                                                    fill="white" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-step login-step-2">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="accordion login-accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Personal Information
+                                                    <p class="p-default">
+                                                        In the registration below, please fill out all the required
+                                                        fields. In order for the data to be valid, it must be provided.
+                                                    </p>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12 mb-3">
+                                                            <label for="email-address"
+                                                                class="form-label fw-500 text_neutral--800">Email
+                                                                Address</label>
+                                                            <input type="email" name="email-address"
+                                                                class="form-control input-control"
+                                                                placeholder="demo@gmail.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="first_name"
+                                                                class="form-label fw-500 text_neutral--800">First
+                                                                Name*</label>
+                                                            <input type="text" name="first_name"
+                                                                class="form-control input-control" placeholder="Enter">
+                                                        </div>
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="last_name"
+                                                                class="form-label fw-500 text_neutral--800">Last
+                                                                Name*</label>
+                                                            <input type="text" name="last_name"
+                                                                class="form-control input-control" placeholder="Enter">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12 mb-3">
+                                                            <label for="username"
+                                                                class="form-label fw-500 text_neutral--800">User
+                                                                Name*</label>
+                                                            <input type="text" name="username"
+                                                                class="form-control input-control" placeholder="Enter">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="password"
+                                                                class="form-label fw-500 text_neutral--800">Password*</label>
+                                                            <input type="password" name="password"
+                                                                class="form-control input-control"
+                                                                placeholder="**** ****">
+                                                        </div>
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="c-password"
+                                                                class="form-label fw-500 text_neutral--800">Confirm
+                                                                Password**</label>
+                                                            <input type="password" name="c-password"
+                                                                class="form-control input-control"
+                                                                placeholder="**** ****">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12 mb-3">
+                                                            <label for="phone"
+                                                                class="form-label fw-500 text_neutral--800">Cell
+                                                                Phone*</label>
+                                                            <input type="tel" name="phone"
+                                                                class="form-control input-control"
+                                                                placeholder="8765 7678 8865">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="gender"
+                                                                class="form-label fw-500 text_neutral--800">Gender</label>
+                                                            <select class="theme-select" name="gender"
+                                                                data-placeholder="Select">
+                                                                <option value="" hidden></option>
+                                                                <option value="1">Male</option>
+                                                                <option value="2">Female</option>
+                                                                <option value="3">Others</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="country"
+                                                                class="form-label fw-500 text_neutral--800">Country</label>
+                                                            <select class="theme-select" name="country"
+                                                                data-placeholder="Select">
+                                                                <option value="" hidden></option>
+                                                                <option value="1">Country 1</option>
+                                                                <option value="2">Country 2</option>
+                                                                <option value="3">Country 3</option>
+                                                                <option value="4">Country 4</option>
+                                                                <option value="5">Country 5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="city"
+                                                                class="form-label fw-500 text_neutral--800">City</label>
+                                                            <select class="theme-select" name="city"
+                                                                data-placeholder="Select City">
+                                                                <option value="" hidden></option>
+                                                                <option value="1">City 1</option>
+                                                                <option value="2">City 2</option>
+                                                                <option value="3">City 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="zipcode"
+                                                                class="form-label fw-500 text_neutral--800">Zip
+                                                                Code</label>
+                                                            <input type="text" name="zipcode"
+                                                                class="form-control input-control" placeholder="Enter">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-8 mb-3">
+                                                            <label for="city"
+                                                                class="form-label fw-500 text_neutral--800">Did you ever
+                                                                work for any other online academic assistance
+                                                                companies?</label>
+                                                            <div class="form-radio-group">
+                                                                <div class="radio-wrapper">
+                                                                    <label for="yes" class="theme-radio">
+                                                                        <input type="radio" name="radio" id="yes">
+                                                                        Yes
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio-wrapper">
+                                                                    <label for="no" class="theme-radio">
+                                                                        <input type="radio" name="radio" id="no">
+                                                                        No
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-8 mb-3">
+                                                            <label for="city"
+                                                                class="form-label fw-500 text_neutral--800">* What
+                                                                citation styles are you familiar with?</label>
+                                                            <div class="form-radio-group">
+                                                                <div class="radio-wrapper checkbox-wrapper">
+                                                                    <input type="checkbox" class="checkbox-control"
+                                                                        name="apa" id="apa">
+                                                                    <label for="apa" class="p-default">APA</label>
+                                                                </div>
+                                                                <div class="radio-wrapper checkbox-wrapper">
+                                                                    <input type="checkbox" class="checkbox-control"
+                                                                        name="chicago/turabian" id="chicago/turabian">
+                                                                    <label for="chicago/turabian"
+                                                                        class="p-default">Chicago/Turabian</label>
+                                                                </div>
+                                                                <div class="radio-wrapper checkbox-wrapper">
+                                                                    <input type="checkbox" class="checkbox-control"
+                                                                        name="harvard" id="harvard">
+                                                                    <label for="harvard"
+                                                                        class="p-default">Harvard</label>
+                                                                </div>
+                                                                <div class="radio-wrapper checkbox-wrapper">
+                                                                    <input type="checkbox" class="checkbox-control"
+                                                                        name="mla" id="mla">
+                                                                    <label for="mla" class="p-default">MLA</label>
+                                                                </div>
+                                                                <div class="radio-wrapper checkbox-wrapper">
+                                                                    <input type="checkbox" class="checkbox-control"
+                                                                        name="none" id="none">
+                                                                    <label for="none" class="p-default">None</label>
+                                                                </div>
+                                                                <div class="radio-wrapper checkbox-wrapper">
+                                                                    <input type="checkbox" class="checkbox-control"
+                                                                        name="other" id="other">
+                                                                    <label for="other" class="p-default">Other</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="gender"
+                                                                class="form-label fw-500 text_neutral--800">* What is
+                                                                your native language?</label>
+                                                            <select class="theme-select" name="language"
+                                                                data-placeholder="Select">
+                                                                <option value="" hidden></option>
+                                                                <option value="1">English</option>
+                                                                <option value="2">Hindi</option>
+                                                                <option value="3">Japanese</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="degree"
+                                                                class="form-label fw-500 text_neutral--800">* What is
+                                                                your highest verifiable academic degree?</label>
+                                                            <select class="theme-select" name="degree"
+                                                                data-placeholder="Select">
+                                                                <option value="" hidden></option>
+                                                                <option value="1">Degree 1</option>
+                                                                <option value="2">Degree 2</option>
+                                                                <option value="3">Degree 3</option>
+                                                                <option value="4">Degree 4</option>
+                                                                <option value="5">Degree 5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12">
+                                                            <label for="gender"
+                                                                class="form-label fw-500 text_neutral--800">Additional
+                                                                Profile Information *</label>
+                                                            <textarea name="" class="form-control input-control" id=""
+                                                                rows="3" placeholder="Type message here"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Identity Verification
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12 mb-3">
+                                                            <label for="id_number"
+                                                                class="form-label fw-500 text_neutral--800">ID
+                                                                Number*</label>
+                                                            <input type="text" name="phone" class="form-control input-control" placeholder="12345678">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12 mb-3">
+                                                            <label for="govt_id"
+                                                                class="form-label fw-500 text_neutral--800">Copy of Govt
+                                                                ID*</label>
+                                                            <div class="file-upload-btn">
+                                                                <input type="file" name="govt_id" class="form-control input-control theme-file-input" id="govt_id">
+                                                                <label for="govt_id" class="theme-file-label"><span class="file-button">Choose File</span><span class="upload-file-name">No file chosen</span></label>
+                                                            </div>
+                                                            <p class="small-bottom-text fst-italic text_neutral--500 mt-2">You can upload only .jpg .jpeg .git and .png. Max File Upload Limit 200M</p>
+                                                            <p class="small-bottom-text text_neutral--700">Smile! Take a selfie holding Your ID. The ID number must be visible on the picture.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12">
+                                                            <label for="id_selfie"
+                                                                class="form-label fw-500 text_neutral--800">ID Selfie*</label>
+                                                            <div class="file-upload-btn">
+                                                                <input type="file" name="id_selfie" class="form-control input-control theme-file-input" id="id_selfie">
+                                                                <label for="id_selfie" class="theme-file-label"><span class="file-button">Choose File</span><span class="upload-file-name">No file chosen</span></label>
+                                                            </div>
+                                                            <p class="small-bottom-text fst-italic text_neutral--500 mt-2">You can upload only .jpg .jpeg .git and .png. Max File Upload Limit 200M</p>
+                                                            <p class="small-bottom-text text_neutral--700">Take a photo of the front and back of your ID. Edit them into a single file and upload it.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Education
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12 mb-3">
+                                                            <label for="university"
+                                                                class="form-label fw-500 text_neutral--800">Name of University*</label>
+                                                            <input type="text" name="university" class="form-control input-control" placeholder="Enter the university name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="degree_name"
+                                                                class="form-label fw-500 text_neutral--800">Degree*</label>
+                                                            <input type="text" name="degree_name" class="form-control input-control" placeholder="Enter Degree name">
+                                                        </div>
+                                                        <div class="col-lg-6 mb-3">
+                                                            <label for="country"
+                                                                class="form-label fw-500 text_neutral--800">Select Graduation Year</label>
+                                                            <select class="theme-select" name="graduation"
+                                                                data-placeholder="Select">
+                                                                <option value="" hidden></option>
+                                                                <option value="1">2018</option>
+                                                                <option value="2">2019</option>
+                                                                <option value="3">2020</option>
+                                                                <option value="4">2021</option>
+                                                                <option value="5">2022</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-12">
+                                                            <label for="certificate"
+                                                                class="form-label fw-500 text_neutral--800">Certificate*</label>
+                                                            <div class="file-upload-btn">
+                                                                <input type="file" name="certificate" class="form-control input-control theme-file-input" id="certificate">
+                                                                <label for="certificate" class="theme-file-label"><span class="file-button">Choose File</span><span class="upload-file-name">No file chosen</span></label>
+                                                            </div>
+                                                            <p class="small-bottom-text fst-italic text_neutral--500 mt-2">You can upload only .jpg .jpeg .git and .png. Max File Upload Limit 200M</p>
+                                                            <p class="small-bottom-text text_neutral--700">Please, upload a copy of the highest degree you have completed(diploma). This will be used to verify the information stated about your education.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <button type="button" class="primary-button border-0 w-100 next-step">Save Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-step login-step-3">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="row gx-3 gy-3 gy-lg-0">
+                                        <div class="col-lg-7">
+                                            <label for="" class="form-label fw-500 text_neutral--800">What is your job? Where do you work? ...</label>
+                                            <p class="p-default text_neutral--500">Please type an essay with a word count of 150-200 here</p>
+                                        </div>
+                                        <div class="col-lg-5 mb-3 text-lg-end">
+                                            <p class="p-default text_neutral--500 fw-bold form-label">1/10</p>
+                                            <p class="p-default text_neutral--800 fw-bold">Time Left: <span class="time-left fw-500 text-danger">30 min 50 sec left</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row gx-3">
+                                        <div class="col-lg-12 mb-3">
+                                            <textarea name="" id="essay" class="form-control input-control" placeholder="Type essay here..." rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-lg-6">
+                                            <a href="javascript:void(0)" class="primary-button primary-button-outline w-100 popup-trigger">
+                                                Skip
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="javascript:void(0)" class="primary-button w-100 h-100 popup-trigger">
+                                                Submit
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg_neutral--800">
+        <div class="container">
+            <div class="login-footer">
+                <div class="login-left">
+                    <img src="./images/jkessay-logo-w.svg" alt="">
+                </div>
+                <div class="login-right">
+                    <p class="text-white">&copy;<span class="year"></span> Jkessay. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- select2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- IntlTelInput JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput-jquery.min.js"></script>
+
+    <!-- Wow JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Script Link -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
